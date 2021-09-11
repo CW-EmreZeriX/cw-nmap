@@ -19,7 +19,7 @@ while(True):
         os.system("apt update -y")
         os.system("apt upgrade -y") #EmreZeriX tarafından kodlanmıştır.
         break
-    if(a=="n"):
+    elif(a=="n")
         print("Sistem güncellenmeden devam ediliyor...")
         break
     else:
@@ -41,20 +41,20 @@ while(True):
             print("{0} Hedefine Nmap taraması başlatılıyor...".format(ip))
             os.system("nmap {0}".format(ip))
             break
-        if(islem==2):
+        elif(islem==2):
             ip=input("Hedef ip adresi:")
             print("---------------------------------------------------")
             print("{0} Hedefine Nmap agresif tarama başlatılıyor...")
             os.system("nmap -A {0}".format(ip))
             break
-        if(islem==3):
+        elif(islem==3):
             ip=input("Hedef ip adresi:") #EmreZeriX
             port=input("Hedef port:")
             print("---------------------------------------------------")
             print("{0} Hedefinin {1} portuna detaylı tarama başlatılıyor...".format(ip,port))
             os.system("nmap {0} -p{1} -A ".format(ip,port))
             break
-        if(islem==4):
+        elif(islem==4):
             ip=input("Hedef ip adresi:") #EmreZeriX
             port1=input("Başlangıç portu:") 
             port2=input("Bitiş portu:")
